@@ -1,0 +1,100 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+  %head
+    %title Myapp
+    %link(rel="stylesheet" href="/stylesheets/screen.css")
+    %script{:src =>  "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
+    %script{:src => '/javascripts/jquery.scrollTo-min.js'}
+    :javascript
+
+      $(document).ready(function(){
+        $(window)._scrollable();
+        var wheight = $(window).height();
+        var wwidth = $(window).width();
+        $('.dimension').css('width',wwidth);
+        $('.dimension').css('height',wheight);
+        var bwidth = (wwidth * 5);
+        var bheight = (wheight * 5); 
+        $('body').css('width',bwidth);
+        $('body').css('height',bheight);
+        
+        var c7x = wwidth * 2
+        var c6x = wwidth * 3
+        var c5x = wwidth * 3
+        var c4x = wwidth * 2
+        var c3x = wwidth * 1
+        var c2x = 0
+        var c1x = 0
+        
+        var c7y = 0
+        var c6y = wheight * 1
+        var c5y = wheight * 2
+        var c4y = wheight * 3
+        var c3y = wheight * 3
+        var c2y = wheight * 2
+        var c1y = wheight * 1
+        
+        $('.c7').bind('click', function() {
+          $.scrollTo({ top:c7y, left:c7x}, 800);
+        });
+        $('.c6').bind('click', function() {
+          $.scrollTo({ top:c6y, left:c6x}, 800);
+        });
+        $('.c5').bind('click', function() {
+          $.scrollTo({ top:c5y, left:c5x}, 800);
+        });
+        $('.c4').bind('click', function() {
+          $.scrollTo({ top:c4y, left:c4x}, 800);
+        });
+        $('.c3').bind('click', function() {
+          $.scrollTo({ top:c3y, left:c3x}, 800);
+        });
+        $('.c2').bind('click', function() {
+          $.scrollTo({ top:c2y, left:c2x}, 800);
+        });
+        $('.c1').bind('click', function() {
+          $.scrollTo({ top:c1y, left:c1x}, 800);
+        });
+      });
+
+  %body.bp
+    //first row
+    .null-1.dimension
+    .null-2.dimension
+    .content-7.dimension
+      %img{:src => "/images/c7.png"}
+    .null-3.dimension
+    
+    //Second row
+    .content-1.dimension.clearleft
+      %img{:src => "/images/c1.png"}
+    .content-0.dimension
+    .null-4.dimension
+    .content-6.dimension
+      %img{:src => "/images/c6.png"}
+    
+    //Third row
+    .content-2.dimension.clearleft
+      %img{:src => "/images/c2.png"}
+    .null-5.dimension
+    .null-6.dimension
+    .content-5.dimension
+      %img{:src => "/images/c5.png"}
+    
+    //Fourth column
+    .null-7.dimension.clearleft
+    .content-3.dimension
+      %img{:src => "/images/c3.png"}
+    .content-4.dimension
+      %img{:src => "/images/c4.png"}
+    .null-8.dimension
+    
+    .nav
+      %a.c7{:href => "#"} C7
+      %a.c6{:href => "#"} C6
+      %a.c5{:href => "#"} C5
+      %a.c4{:href => "#"} C4
+      %a.c3{:href => "#"} C3
+      %a.c2{:href => "#"} C2
+      %a.c1{:href => "#"} C1
+    
