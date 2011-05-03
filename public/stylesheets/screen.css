@@ -13,7 +13,7 @@ table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inhe
 
 a img { border: none; }
 
-body { overflow: hidden; }
+body { overflow: hidden; font-family: 'Raleway', arial, serif; }
 
 .wrapper { position: relative; }
 
@@ -28,7 +28,9 @@ body { overflow: hidden; }
 
 .clearleft { clear: left; }
 
-.content-0 img { display: block; margin: 5% auto; width: 699px; }
+.content-0 .logo { display: block; margin: 5% auto; width: 592px; }
+.content-0 .sponsors { position: absolute; top: 86%; width: 100%; }
+.content-0 .sponsors img { width: 1044px; display: block; margin: 0 auto; }
 
 .c1.selected { background: url("/images/circles.png") no-repeat 0 4px transparent; }
 

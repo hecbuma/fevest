@@ -1,5 +1,7 @@
+
 body {
 	overflow:hidden;
+  font-family: 'Raleway', arial, serif; 
 }
 .wrapper {
   position:relative;
@@ -50,10 +52,20 @@ body {
   clear:left;
 }
 .content-0 {
-	img {
+	.logo {
   	display: block;
     margin: 5% auto;
-    width: 699px;
+    width: 592px;
+  }
+  .sponsors {
+    position: absolute;
+    top: 86%;
+    width: 100%;
+    img {
+    	width:1044px;
+      display:block;
+      margin:0 auto;
+    }
   }
 }
 .content-1 {
