@@ -17,6 +17,7 @@
         var bheight = (wheight * 5); 
         $('body').css('width',bwidth);
         $('body').css('height',bheight);
+
         
         var c7x = wwidth * 2
         var c6x = wwidth * 3
@@ -33,42 +34,61 @@
         var c3y = wheight * 3
         var c2y = wheight * 2
         var c1y = wheight * 1
-        
+
+        $('.c0').bind('click', function() {
+          $.scrollTo({ top:0, left:0}, 800);
+          $('.nav ul li a').removeClass('selected');
+        });       
         $('.c7').bind('click', function() {
           $.scrollTo({ top:c7y, left:c7x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c7').addClass("selected");
         });
         $('.c6').bind('click', function() {
           $.scrollTo({ top:c6y, left:c6x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c6').addClass("selected");
         });
         $('.c5').bind('click', function() {
           $.scrollTo({ top:c5y, left:c5x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c5').addClass("selected");
         });
         $('.c4').bind('click', function() {
           $.scrollTo({ top:c4y, left:c4x}, 800);
+          $('.nav ul li a').removeClass('selected'); 
+          $('.c4').addClass("selected");
         });
         $('.c3').bind('click', function() {
           $.scrollTo({ top:c3y, left:c3x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c3').addClass("selected");
         });
         $('.c2').bind('click', function() {
           $.scrollTo({ top:c2y, left:c2x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c2').addClass("selected");
         });
         $('.c1').bind('click', function() {
           $.scrollTo({ top:c1y, left:c1x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c1').addClass("selected");
         });
       });
 
   %body.bp
     //first row
+    .content-0.dimension
+      %img{:src => "/images/logo.png"}
     .null-1.dimension
-    .null-2.dimension
     .content-7.dimension
       %img{:src => "/images/c7.png"}
-    .null-3.dimension
+    .null-2.dimension
     
     //Second row
     .content-1.dimension.clearleft
       %img{:src => "/images/c1.png"}
-    .content-0.dimension
+    .null-3.dimension
     .null-4.dimension
     .content-6.dimension
       %img{:src => "/images/c6.png"}
@@ -90,11 +110,23 @@
     .null-8.dimension
     
     .nav
-      %a.c7{:href => "#"} C7
-      %a.c6{:href => "#"} C6
-      %a.c5{:href => "#"} C5
-      %a.c4{:href => "#"} C4
-      %a.c3{:href => "#"} C3
-      %a.c2{:href => "#"} C2
-      %a.c1{:href => "#"} C1
-    
+      %img{:src => "/images/logosmall.png"}
+      %ul
+        %li
+          %a.c0{:href => "#"} Home
+        %li
+          %a.c1{:href => "#"} Eventos
+        %li
+          %a.c2{:href => "#"} Infraestructura
+        %li
+          %a.c3{:href => "#"} Confer
+        %li
+          %a.c4{:href => "#"} Programa
+        %li
+          %a.c5{:href => "#"} Credeciamento
+        %li
+          %a.c6{:href => "#"} Informacion
+        %li
+          %a.c7{:href => "#"} Impresa
+        %li
+          %a.c8{:href => "#"} Fottos

@@ -13,14 +13,38 @@ table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inhe
 
 a img { border: none; }
 
+body { overflow: hidden; }
+
 .wrapper { position: relative; }
 
-.dimension { float: left; border: solid 1px black; overflow: hidden; }
+.dimension { float: left; overflow: hidden; }
 .dimension img { width: 100%; position: relative; top: 0; left: 0; }
 
-.nav { position: absolute; height: 50px; width: 100%; position: fixed; top: 80%; }
+.nav { background-color: white; position: absolute; height: 38px; width: 100%; position: fixed; top: 80%; }
+.nav img { position: absolute; right: 21px; top: -105px; }
+.nav ul { width: 960px; display: block; margin: 0 auto !important; background-color: white; }
+.nav ul li { float: left; list-style: none; padding: 5px; margin: 0 3px; }
+.nav ul li a { display: block; text-transform: uppercase; text-decoration: none; color: black !important; padding: 5px 0 1px 21px; }
 
 .clearleft { clear: left; }
+
+.content-0 img { display: block; margin: 5% auto; width: 699px; }
+
+.c1.selected { background: url("/images/circles.png") no-repeat 0 4px transparent; }
+
+.c2.selected { background: url("/images/circles.png") no-repeat 0 -112px transparent; }
+
+.c3.selected { background: url("/images/circles.png") no-repeat 0 -42px transparent; }
+
+.c4.selected { background: url("/images/circles.png") no-repeat 0 -66px transparent; }
+
+.c5.selected { background: url("/images/circles.png") no-repeat 0 4px transparent; }
+
+.c6.selected { background: url("/images/circles.png") no-repeat 0 -19px transparent; }
+
+.c7.selected { background: url("/images/circles.png") no-repeat 0 -42px transparent; }
+
+.c8.selected { background: url("/images/circles.png") no-repeat 0 0 transparent; }
 
 body.bp .box { padding: 1.5em; margin-bottom: 1.5em; background: #e5ecf9; }
 body.bp div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
