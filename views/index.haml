@@ -1,0 +1,136 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+  %head
+    %title Fevest 
+    %link(rel="stylesheet" href="/stylesheets/screen.css")
+    %link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100")
+    %script{:src =>  "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
+    %script{:src => '/javascripts/jquery.scrollTo-min.js'}
+    :javascript
+
+      $(document).ready(function(){
+        $(window)._scrollable();
+        var wheight = $(window).height();
+        var wwidth = $(window).width();
+        $('.dimension').css('width',wwidth);
+        $('.dimension').css('height',wheight);
+        var bwidth = (wwidth * 5);
+        var bheight = (wheight * 5); 
+        $('body').css('width',bwidth);
+        $('body').css('height',bheight);
+
+        
+        var c7x = wwidth * 2
+        var c6x = wwidth * 3
+        var c5x = wwidth * 3
+        var c4x = wwidth * 2
+        var c3x = wwidth * 1
+        var c2x = 0
+        var c1x = 0
+        
+        var c7y = 0
+        var c6y = wheight * 1
+        var c5y = wheight * 2
+        var c4y = wheight * 3
+        var c3y = wheight * 3
+        var c2y = wheight * 2
+        var c1y = wheight * 1
+
+        $('.c0').bind('click', function() {
+          $.scrollTo({ top:0, left:0}, 800);
+          $('.nav ul li a').removeClass('selected');
+        });       
+        $('.c7').bind('click', function() {
+          $.scrollTo({ top:c7y, left:c7x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c7').addClass("selected");
+        });
+        $('.c6').bind('click', function() {
+          $.scrollTo({ top:c6y, left:c6x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c6').addClass("selected");
+        });
+        $('.c5').bind('click', function() {
+          $.scrollTo({ top:c5y, left:c5x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c5').addClass("selected");
+        });
+        $('.c4').bind('click', function() {
+          $.scrollTo({ top:c4y, left:c4x}, 800);
+          $('.nav ul li a').removeClass('selected'); 
+          $('.c4').addClass("selected");
+        });
+        $('.c3').bind('click', function() {
+          $.scrollTo({ top:c3y, left:c3x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c3').addClass("selected");
+        });
+        $('.c2').bind('click', function() {
+          $.scrollTo({ top:c2y, left:c2x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c2').addClass("selected");
+        });
+        $('.c1').bind('click', function() {
+          $.scrollTo({ top:c1y, left:c1x}, 800);
+          $('.nav ul li a').removeClass('selected');
+          $('.c1').addClass("selected");
+        });
+      });
+
+  %body.bp
+    //first row
+    .content-0.dimension
+      %img.logo{:src => "/images/logo.png"}
+      .sponsors
+        %img.sponsor{:src => "/images/sponsors.png"}
+    .null-1.dimension
+    .content-7.dimension
+      %img{:src => "/images/c7.png"}
+    .null-2.dimension
+    
+    //Second row
+    .content-1.dimension.clearleft
+      %img{:src => "/images/c1.png"}
+    .null-3.dimension
+    .null-4.dimension
+    .content-6.dimension
+      %img{:src => "/images/c6.png"}
+    
+    //Third row
+    .content-2.dimension.clearleft
+      %img{:src => "/images/c2.png"}
+    .null-5.dimension
+    .null-6.dimension
+    .content-5.dimension
+      %img{:src => "/images/c5.png"}
+    
+    //Fourth column
+    .null-7.dimension.clearleft
+    .content-3.dimension
+      %img{:src => "/images/c3.png"}
+    .content-4.dimension
+      %img{:src => "/images/c4.png"}
+    .null-8.dimension
+    
+    .nav
+      %img{:src => "/images/logosmall.png"}
+      %ul
+        %li
+          %a.c0{:href => "#"} Home
+        %li
+          %a.c1{:href => "#"} Eventos
+        %li
+          %a.c2{:href => "#"} Infraestructura
+        %li
+          %a.c3{:href => "#"} Confer
+        %li
+          %a.c4{:href => "#"} Programa
+        %li
+          %a.c5{:href => "#"} Credeciamento
+        %li
+          %a.c6{:href => "#"} Informacion
+        %li
+          %a.c7{:href => "#"} Impresa
+        %li
+          %a.c8{:href => "#"} Fottos
+      
