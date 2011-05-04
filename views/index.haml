@@ -2,9 +2,9 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
   %head
     %title Fevest 
-    %link(rel="stylesheet" href="/stylesheets/screen.css")
     %link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100")
-    %script{:src =>  "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
+    %link(rel="stylesheet" href="/stylesheets/screen.css")
+    %script{:src =>  "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"}
     %script{:src => '/javascripts/jquery.scrollTo-min.js'}
     :javascript
 
@@ -37,40 +37,48 @@
         var c1y = wheight * 1
 
         $('.c0').bind('click', function() {
+          $('.nav ul li a').attr('href','#c0');
           $.scrollTo({ top:0, left:0}, 800);
           $('.nav ul li a').removeClass('selected');
         });       
         $('.c7').bind('click', function() {
+          $('.nav ul li a').attr('href','#c7');
           $.scrollTo({ top:c7y, left:c7x}, 800);
           $('.nav ul li a').removeClass('selected');
           $('.c7').addClass("selected");
         });
         $('.c6').bind('click', function() {
+          $('.nav ul li a').attr('href','#c6');
           $.scrollTo({ top:c6y, left:c6x}, 800);
           $('.nav ul li a').removeClass('selected');
           $('.c6').addClass("selected");
         });
         $('.c5').bind('click', function() {
+          $('.nav ul li a').attr('href','#c5');
           $.scrollTo({ top:c5y, left:c5x}, 800);
           $('.nav ul li a').removeClass('selected');
           $('.c5').addClass("selected");
         });
         $('.c4').bind('click', function() {
+          $('.nav ul li a').attr('href','#c4');
           $.scrollTo({ top:c4y, left:c4x}, 800);
           $('.nav ul li a').removeClass('selected'); 
           $('.c4').addClass("selected");
         });
         $('.c3').bind('click', function() {
+          $('.nav ul li a').attr('href','#c3');
           $.scrollTo({ top:c3y, left:c3x}, 800);
           $('.nav ul li a').removeClass('selected');
           $('.c3').addClass("selected");
         });
         $('.c2').bind('click', function() {
+          $('.nav ul li a').attr('href','#c2');
           $.scrollTo({ top:c2y, left:c2x}, 800);
           $('.nav ul li a').removeClass('selected');
           $('.c2').addClass("selected");
         });
         $('.c1').bind('click', function() {
+          $('.nav ul li a').attr('href','#c1');
           $.scrollTo({ top:c1y, left:c1x}, 800);
           $('.nav ul li a').removeClass('selected');
           $('.c1').addClass("selected");
@@ -79,36 +87,74 @@
 
   %body.bp
     //first row
-    .content-0.dimension
+    .content-0.dimension#c0
       %img.logo{:src => "/images/logo.png"}
       .sponsors
         %img.sponsor{:src => "/images/sponsors.png"}
     .null-1.dimension
-    .content-7.dimension
+    .content-7.dimension#c7
+      .content
+        text tex text text
+        %p text tex text ext ext tex
       %img{:src => "/images/c7.png"}
     .null-2.dimension
     
     //Second row
-    .content-1.dimension.clearleft
+    .content-1.dimension.clearleft#c1
+      .content
+        %p 
+          O Sindicato das Indústrias do Vestuário de Nova Friburgo e Região tem o orgulho de apresentar a Fevest 2011. O evento, que já era referência por muitos anos, volta agora com uma edição inovadora e surpreendente. Você poderá seguir um roteiro das principais confecções da cidade de Nova Friburgo, além de conhecer toda produção criativa da região. Ou seja, um evento único, como você nunca viu.
+          Serão realizados três circuitos diferentes, que passarão pelos principais bairros produtores de moda da cidade: Ponte da Saudade, Olaria e Conselheiro Paulino. Para embarcar nas vans, os compradores deverão fazer o credenciamento no Espaço Satélite, local central do evento que também abrigará uma exposição de lingerie das confecções, além de eventos noturnos
+
       %img{:src => "/images/c1.png"}
     .null-3.dimension
     .null-4.dimension
-    .content-6.dimension
+    .content-6.dimension#c6
+      .content
+        %p 
+          %span
+            %a{:href => ""} 22 2523.9301  |  fevest@fabricadeideias.etc.br 
       %img{:src => "/images/c6.png"}
     
     //Third row
-    .content-2.dimension.clearleft
+    .content-2.dimension.clearleft#c2
+      .content
+        %p 
+          Circuito de compras com vans que levarão os compradores até as confecções, lojas de fábrica e showrooms na cidade de Nova Friburgo.
+          Satélite Fevest – espaço central do evento com credenciamento, exposições, desfiles e palestras.
+          Todo o circuito é cuidadosamente acompanhado pela equipe da Fevest 2011.
       %img{:src => "/images/c2.png"}
     .null-5.dimension
     .null-6.dimension
-    .content-5.dimension
+    .content-5.dimension#c5
+      .content
+        content 5   TExt ext text Tex tExt
+        %p ereqw r wqer wqer qwer qwer we rw
+        wrrwr
+        we
+        r
       %img{:src => "/images/c5.png"}
     
     //Fourth column
     .null-7.dimension.clearleft
-    .content-3.dimension
+    .content-3.dimension#c3
+      .content
+        %p 
+          Confecção | 
+          %span Fitness        %p 
+          Confecção | 
+          %span Fitness
+        %p 
+          Confecção | 
+          %span Fitness
       %img{:src => "/images/c3.png"}
-    .content-4.dimension
+    .content-4.dimension#c4
+      .content
+        content 4   TExt ext text Tex tExt
+        %p ereqw r wqer wqer qwer qwer we rw
+        wrrwr
+        we
+        r      
       %img{:src => "/images/c4.png"}
     .null-8.dimension
     
@@ -116,21 +162,21 @@
       %img{:src => "/images/logosmall.png"}
       %ul
         %li
-          %a.c0{:href => "#"} Home
+          %a.c0{:href => "#c0"} Home
         %li
-          %a.c1{:href => "#"} Eventos
+          %a.c1{:href => "#c0"} Eventos
         %li
-          %a.c2{:href => "#"} Infraestructura
+          %a.c2{:href => "#c0"} Infraestructura
         %li
-          %a.c3{:href => "#"} Confer
+          %a.c3{:href => "#c0"} Confer
         %li
-          %a.c4{:href => "#"} Programa
+          %a.c4{:href => "#c0"} Programa
         %li
-          %a.c5{:href => "#"} Credeciamento
+          %a.c5{:href => "#c0"} Credeciamento
         %li
-          %a.c6{:href => "#"} Informacion
+          %a.c6{:href => "#c0"} Informacion
         %li
-          %a.c7{:href => "#"} Impresa
+          %a.c7{:href => "#c0"} Impresa
         %li
-          %a.c8{:href => "#"} Fottos
+          %a.c8{:href => "#c0"} Fottos
       
