@@ -1,7 +1,8 @@
 
 body {
 	overflow:hidden;
-  font-family: 'Raleway', arial, serif; 
+  font-family: 'Raleway', arial, serif !important;
+  font-weigth:800;
 }
 .wrapper {
   position:relative;
@@ -69,25 +70,60 @@ body {
   }
 }
 .content-1 {
-
+ .content {
+ 	  margin-left: 10%;
+    margin-top: 10%;
+    position: absolute;
+    width: 350px;
+ }
 }
 .content-2 {
-  
+  .content {
+ 	  margin-left: 65%;
+    margin-top: 10%;
+    position: absolute;
+    width: 350px;
+ } 
 }
 .content-3 {
-
+ .content {
+ 	  margin-left: 42%;
+    margin-top: 10%;
+    position: absolute;
+    width: 350px;
+ }
 }
 .content-4 {
-
+ .content {
+ 	  margin-left: 34%;
+    margin-top: 10%;
+    position: absolute;
+    width: 350px;
+ }
 }
 .content-5 {
-
+ .content {
+ 	  margin-left: 65%;
+    margin-top: 10%;
+    position: absolute;
+    width: 350px;
+ }
 }
 .content-6 {
-
+ .content {
+ 	  margin-left: 13%;
+    margin-top: 18%;
+    position: absolute;
+    width: 350px;
+ }
 }
 .content-7 {
-
+ .content {
+ 	  margin-left: 51%;
+    margin-top: 13%;
+    position: absolute;
+    width: 350px;
+ }
 }
 
 .c1.selected {
