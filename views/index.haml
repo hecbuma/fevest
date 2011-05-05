@@ -2,7 +2,6 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
   %head
     %title Fevest 
-    %link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:100")
     %link(rel="stylesheet" href="/stylesheets/screen.css")
     %script{:src =>  "https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"}
     %script{:src => '/javascripts/jquery.scrollTo-min.js'}
@@ -14,27 +13,30 @@
         var wwidth = $(window).width();
         $('.dimension').css('width',wwidth);
         $('.dimension').css('height',wheight);
-        var bwidth = (wwidth * 5);
-        var bheight = (wheight * 5); 
+        var mright = wwidth/2;
+        var mbottom = wheight;
+        $('.dimension').css('margin-right',mright);
+        $('.dimension').css('margin-bottom',mbottom);
+        var bwidth = (wwidth * 5) + (mright * 5);
+        var bheight = (wheight * 5) + (mbottom * 5); 
         $('body').css('width',bwidth);
         $('body').css('height',bheight);
 
-        
-        var c7x = wwidth * 2
-        var c6x = wwidth * 3
-        var c5x = wwidth * 3
-        var c4x = wwidth * 2
-        var c3x = wwidth * 1
+        var c7x = wwidth * 2 + (mright * 2)
+        var c6x = wwidth * 3 + (mright * 3) 
+        var c5x = wwidth * 3 + (mright * 3)
+        var c4x = wwidth * 2 + (mright * 2)
+        var c3x = wwidth * 1 + (mright * 1)
         var c2x = 0
         var c1x = 0
         
         var c7y = 0
-        var c6y = wheight * 1
-        var c5y = wheight * 2
-        var c4y = wheight * 3
-        var c3y = wheight * 3
-        var c2y = wheight * 2
-        var c1y = wheight * 1
+        var c6y = wheight * 1 + (mbottom * 1)
+        var c5y = wheight * 2 + (mbottom * 2)
+        var c4y = wheight * 3 + (mbottom * 3)
+        var c3y = wheight * 3 + (mbottom * 3)
+        var c2y = wheight * 2 + (mbottom * 2)
+        var c1y = wheight * 1 + (mbottom * 1)
 
         $('.c0').bind('click', function() {
           $('.nav ul li a').attr('href','#c0');
@@ -96,7 +98,7 @@
       .content
         text tex text text
         %p text tex text ext ext tex
-      %img{:src => "/images/c7.png"}
+      %img{:src => "/images/orange.png"}
     .null-2.dimension
     
     //Second row
@@ -106,7 +108,7 @@
           O Sindicato das Indústrias do Vestuário de Nova Friburgo e Região tem o orgulho de apresentar a Fevest 2011. O evento, que já era referência por muitos anos, volta agora com uma edição inovadora e surpreendente. Você poderá seguir um roteiro das principais confecções da cidade de Nova Friburgo, além de conhecer toda produção criativa da região. Ou seja, um evento único, como você nunca viu.
           Serão realizados três circuitos diferentes, que passarão pelos principais bairros produtores de moda da cidade: Ponte da Saudade, Olaria e Conselheiro Paulino. Para embarcar nas vans, os compradores deverão fazer o credenciamento no Espaço Satélite, local central do evento que também abrigará uma exposição de lingerie das confecções, além de eventos noturnos
 
-      %img{:src => "/images/c1.png"}
+      %img{:src => "/images/blue.png"}
     .null-3.dimension
     .null-4.dimension
     .content-6.dimension#c6
@@ -114,7 +116,7 @@
         %p 
           %span
             %a{:href => ""} 22 2523.9301  |  fevest@fabricadeideias.etc.br 
-      %img{:src => "/images/c6.png"}
+      %img{:src => "/images/pink.png"}
     
     //Third row
     .content-2.dimension.clearleft#c2
@@ -123,7 +125,7 @@
           Circuito de compras com vans que levarão os compradores até as confecções, lojas de fábrica e showrooms na cidade de Nova Friburgo.
           Satélite Fevest – espaço central do evento com credenciamento, exposições, desfiles e palestras.
           Todo o circuito é cuidadosamente acompanhado pela equipe da Fevest 2011.
-      %img{:src => "/images/c2.png"}
+      %img{:src => "/images/pink.png"}
     .null-5.dimension
     .null-6.dimension
     .content-5.dimension#c5
@@ -133,7 +135,7 @@
         wrrwr
         we
         r
-      %img{:src => "/images/c5.png"}
+      %img{:src => "/images/blue.png"}
     
     //Fourth column
     .null-7.dimension.clearleft
@@ -147,7 +149,7 @@
         %p 
           Confecção | 
           %span Fitness
-      %img{:src => "/images/c3.png"}
+      %img{:src => "/images/orange.png"}
     .content-4.dimension#c4
       .content
         content 4   TExt ext text Tex tExt
@@ -155,7 +157,7 @@
         wrrwr
         we
         r      
-      %img{:src => "/images/c4.png"}
+      %img{:src => "/images/green.png"}
     .null-8.dimension
     
     .nav

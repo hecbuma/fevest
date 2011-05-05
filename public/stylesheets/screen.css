@@ -13,11 +13,11 @@ table { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inhe
 
 a img { border: none; }
 
-body { overflow: hidden; font-family: 'Raleway', arial, serif !important; font-weigth: 800; }
+body { overflow: hidden; }
 
 .wrapper { position: relative; }
 
-.dimension { float: left; overflow: hidden; }
+.dimension { float: left; }
 .dimension img { width: 100%; position: relative; top: 0; left: 0; }
 
 .nav { background-color: white; position: absolute; height: 38px; width: 100%; position: fixed; top: 80%; }
@@ -33,18 +33,25 @@ body { overflow: hidden; font-family: 'Raleway', arial, serif !important; font-w
 .content-0 .sponsors img { width: 1044px; display: block; margin: 0 auto; }
 
 .content-1 .content { margin-left: 10%; margin-top: 10%; position: absolute; width: 350px; }
+.content-1 img { left: 65%; top: -46%; width: 55%; }
 
-.content-2 .content { margin-left: 65%; margin-top: 10%; position: absolute; width: 350px; }
+.content-2 .content { margin-left: 65%; margin-top: 10%; position: absolute; width: 350px; z-index: 1; }
+.content-2 img { left: 9%; top: -66%; width: 60%; z-index: 0; }
 
 .content-3 .content { margin-left: 42%; margin-top: 10%; position: absolute; width: 350px; }
+.content-3 img { left: -30%; top: 13%; width: 57%; }
 
 .content-4 .content { margin-left: 34%; margin-top: 10%; position: absolute; width: 350px; }
+.content-4 img { left: 65%; top: 51%; width: 60%; }
 
-.content-5 .content { margin-left: 65%; margin-top: 10%; position: absolute; width: 350px; }
+.content-5 .content { margin-left: 65%; margin-top: 10%; position: absolute; width: 350px; z-index: 1; }
+.content-5 img { left: 5%; top: -65%; width: 56%; }
 
 .content-6 .content { margin-left: 13%; margin-top: 18%; position: absolute; width: 350px; }
+.content-6 img { left: 55%; top: -50%; width: 64%; }
 
 .content-7 .content { margin-left: 51%; margin-top: 13%; position: absolute; width: 350px; }
+.content-7 img { left: -24%; top: 48%; width: 66%; }
 
 .c1.selected { background: url("/images/circles.png") no-repeat 0 4px transparent; }
 

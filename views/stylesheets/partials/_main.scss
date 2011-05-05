@@ -1,15 +1,12 @@
 
 body {
 	overflow:hidden;
-  font-family: 'Raleway', arial, serif !important;
-  font-weigth:800;
 }
 .wrapper {
   position:relative;
 }
 .dimension {
   float:left;
-  overflow:hidden;
   img {
    width: 100%;
    position: relative;
@@ -76,6 +73,11 @@ body {
     position: absolute;
     width: 350px;
  }
+ img {
+ 	left:65%;
+  top:-46%;
+  width: 55%;
+ }
 }
 .content-2 {
   .content {
@@ -83,7 +85,14 @@ body {
     margin-top: 10%;
     position: absolute;
     width: 350px;
- } 
+    z-index:1;
+ }
+ img {
+    left: 9%;
+    top: -66%;
+    width: 60%;
+    z-index: 0; 
+ }
 }
 .content-3 {
  .content {
@@ -91,6 +100,11 @@ body {
     margin-top: 10%;
     position: absolute;
     width: 350px;
+ }
+ img {
+    left: -30%;
+    top: 13%;
+    width: 57%;
  }
 }
 .content-4 {
@@ -100,6 +114,11 @@ body {
     position: absolute;
     width: 350px;
  }
+ img {
+    left: 65%;
+    top: 51%;
+    width: 60%; 
+ }
 }
 .content-5 {
  .content {
@@ -107,6 +126,12 @@ body {
     margin-top: 10%;
     position: absolute;
     width: 350px;
+    z-index:1;
+ }
+ img {
+    left: 5%;
+    top: -65%;
+    width: 56%; 
  }
 }
 .content-6 {
@@ -116,6 +141,11 @@ body {
     position: absolute;
     width: 350px;
  }
+ img {
+    left: 55%;
+    top: -50%;
+    width: 64%;
+ }
 }
 .content-7 {
  .content {
@@ -123,6 +153,11 @@ body {
     margin-top: 13%;
     position: absolute;
     width: 350px;
+ }
+ img {
+ 	  left: -24%;
+    top: 48%;
+    width: 66%;
  }
 }
 
