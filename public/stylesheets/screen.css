@@ -24,7 +24,7 @@ body { overflow: hidden; }
 .nav img { position: absolute; right: 21px; top: -105px; }
 .nav ul { width: 960px; display: block; margin: 0 auto !important; background-color: white; }
 .nav ul li { float: left; list-style: none; padding: 5px; margin: 0 3px; }
-.nav ul li a { display: block; text-transform: uppercase; text-decoration: none; color: black !important; padding: 5px 0 1px 21px; }
+.nav ul li a { display: block; font-weight: bold; text-transform: uppercase; text-decoration: none; color: black !important; padding: 5px 0 1px 19px; }
 
 .clearleft { clear: left; }
 
@@ -52,6 +52,12 @@ body { overflow: hidden; }
 
 .content-7 .content { margin-left: 51%; margin-top: 13%; position: absolute; width: 350px; }
 .content-7 img { left: -24%; top: 48%; width: 66%; }
+
+.content-8 .content { margin-left: 23%; margin-top: 7%; position: absolute; width: 350px; }
+.content-8 .content .thumbs { color: red; width: 300px; }
+.content-8 .content .thumbs a img { width: 57px; }
+.content-8 .content #images { color: red; }
+.content-8 img.circle { left: 73%; top: 0; width: 60%; }
 
 .c1.selected { background: url("/images/circles.png") no-repeat 0 4px transparent; }
 

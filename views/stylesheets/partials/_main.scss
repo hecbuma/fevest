@@ -1,6 +1,6 @@
 
 body {
-	overflow:hidden;
+  overflow:hidden;
 }
 .wrapper {
   position:relative;
@@ -38,10 +38,11 @@ body {
       margin:0 3px;
       a {
       	display:block;
+        font-weight: bold;
         text-transform:uppercase;
         text-decoration:none;
         color:black !important;
-        padding: 5px 0 1px 21px;
+        padding: 5px 0 1px 19px;
       }
     }
   }  
@@ -158,6 +159,31 @@ body {
  	  left: -24%;
     top: 48%;
     width: 66%;
+ }
+}
+.content-8 {
+ .content {
+ 	 margin-left: 23%;
+   margin-top: 7%;
+   position: absolute;
+   width: 350px;
+   .thumbs {
+     color:red;
+     width:300px;
+     a {
+       img {
+         width:57px;
+       }
+     }
+   }
+   #images {
+     color:red;
+   }
+ }
+ img.circle {
+    left: 73%;
+    top: 0;
+    width: 60%;
  }
 }
 
