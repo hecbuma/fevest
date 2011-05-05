@@ -35,7 +35,7 @@ body { overflow: hidden; }
 .content-1 .content { margin-left: 10%; margin-top: 10%; position: absolute; width: 350px; }
 .content-1 img { left: 65%; top: -46%; width: 55%; }
 
-.content-2 .content { margin-left: 65%; margin-top: 10%; position: absolute; width: 350px; z-index: 1; }
+.content-2 .content { margin-left: 66%; margin-top: 10%; position: absolute; width: 350px; z-index: 1; }
 .content-2 img { left: 9%; top: -66%; width: 60%; z-index: 0; }
 
 .content-3 .content { margin-left: 42%; margin-top: 10%; position: absolute; width: 350px; }
