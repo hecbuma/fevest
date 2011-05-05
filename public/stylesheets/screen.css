@@ -73,7 +73,7 @@ body { overflow: hidden; }
 
 .c7.selected { background: url("/images/circles.png") no-repeat 0 -42px transparent; }
 
-.c8.selected { background: url("/images/circles.png") no-repeat 0 0 transparent; }
+.c8.selected { background: url("/images/circles.png") no-repeat 0 -42px transparent; }
 
 body.bp .box { padding: 1.5em; margin-bottom: 1.5em; background: #e5ecf9; }
 body.bp div.border { padding-right: 4px; margin-right: 5px; border-right: 1px solid #eeeeee; }
