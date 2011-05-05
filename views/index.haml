@@ -22,6 +22,8 @@
         $('body').css('width',bwidth);
         $('body').css('height',bheight);
         $('.nav img').css('display','none');
+        $('.nav ').css('top','72%');
+        
         var c8x = wwidth * 2 + (mright * 2)
         var c7x = wwidth * 2 + (mright * 2)
         var c6x = wwidth * 3 + (mright * 3) 
@@ -42,54 +44,54 @@
 
         $('.c0').bind('click', function() {
           $('.nav ul li a').attr('href','#c0');
-          $.scrollTo({ top:0, left:0}, 5000, {onAfter:function(){$('.nav img').hide();}});
+          $.scrollTo({ top:0, left:0}, 5000, {onAfter:function(){$('.nav ').animate({top: '72%'},1000);$('.nav img').hide();}});
           $('.nav ul li a').removeClass('selected');
         });
         $('.c8').bind('click', function() {
           $('.nav ul li a').attr('href','#c8');
-          $.scrollTo({ top:c8y, left:c8x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c8y, left:c8x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c8').addClass("selected");
         });
         $('.c7').bind('click', function() {
           $('.nav ul li a').attr('href','#c7');
-          $.scrollTo({ top:c7y, left:c7x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c7y, left:c7x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c7').addClass("selected");
         });
         $('.c6').bind('click', function() {
           $('.nav ul li a').attr('href','#c6');
-          $.scrollTo({ top:c6y, left:c6x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c6y, left:c6x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c6').addClass("selected");
         });
         $('.c5').bind('click', function() {
           $('.nav ul li a').attr('href','#c5');
-          $.scrollTo({ top:c5y, left:c5x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c5y, left:c5x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c5').addClass("selected");
         });
         $('.c4').bind('click', function() {
           $('.nav ul li a').attr('href','#c4');
-          $.scrollTo({ top:c4y, left:c4x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c4y, left:c4x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected'); 
           $('.c4').addClass("selected");
         });
         $('.c3').bind('click', function() {
           $('.nav ul li a').attr('href','#c3');
-          $.scrollTo({ top:c3y, left:c3x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c3y, left:c3x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c3').addClass("selected");
         });
         $('.c2').bind('click', function() {
           $('.nav ul li a').attr('href','#c2');
-          $.scrollTo({ top:c2y, left:c2x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c2y, left:c2x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c2').addClass("selected");
         });
         $('.c1').bind('click', function() {
           $('.nav ul li a').attr('href','#c1');
-          $.scrollTo({ top:c1y, left:c1x}, 5000, {onAfter:function(){$('.nav img').show();}});
+          $.scrollTo({ top:c1y, left:c1x}, 5000, {onAfter:function(){$('.nav ').animate({top: '80%'},1000);$('.nav img').show();}});
           $('.nav ul li a').removeClass('selected');
           $('.c1').addClass("selected");
         });
