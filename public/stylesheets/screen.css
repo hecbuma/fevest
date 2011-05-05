@@ -21,7 +21,7 @@ body { overflow: hidden; }
 .dimension img { width: 100%; position: relative; top: 0; left: 0; }
 
 .nav { background-color: white; position: absolute; height: 38px; width: 100%; position: fixed; top: 80%; }
-.nav img { position: absolute; right: 21px; top: -105px; }
+.nav img { position: absolute; right: 21px; top: -105px; width: 16%; }
 .nav ul { width: 960px; display: block; margin: 0 auto !important; background-color: white; }
 .nav ul li { float: left; list-style: none; padding: 5px; margin: 0 3px; }
 .nav ul li a { display: block; font-weight: bold; text-transform: uppercase; text-decoration: none; color: black !important; padding: 5px 0 1px 19px; }
